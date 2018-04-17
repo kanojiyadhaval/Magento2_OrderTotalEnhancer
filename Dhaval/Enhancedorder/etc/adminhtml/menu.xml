@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Dhaval_Enhancedorder Menu
+ *
+ * @package     Dhaval_Enhancedorder
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dhaval_Enhancedorder::manager" title="Enhancedorder" module="Dhaval_Enhancedorder" sortOrder="10" resource="Dhaval_Enhancedorder::manager"/>
+        <add id="Dhaval_Enhancedorder::add_row" title="Enhancedorder" module="Dhaval_Enhancedorder" sortOrder="20" parent="Dhaval_Enhancedorder::manager" action="enhancedorder/grid" resource="Dhaval_Enhancedorder::add_row"/>
+    </menu>
+</config>

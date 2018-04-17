@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Dhaval\Enhancedorder\Api\Data\GridInterface" type="Dhaval\Enhancedorder\Model\Enhancedorder" />
+ 
+    <virtualType name="Dhaval\Enhancedorder\Model\ResourceModel\Enhancedorder\Enhancedorder\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">dhaval_enhancedorder</argument>
+            <argument name="resourceModel" xsi:type="string">Dhaval\Enhancedorder\Model\ResourceModel\Enhancedorder</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="grid_record_grid_list_data_source" xsi:type="string">Dhaval\Enhancedorder\Model\ResourceModel\Enhancedorder\Enhancedorder\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
